@@ -1,0 +1,121 @@
+begin %MLPQ%
+Population(id,year,region,population) :- id = 1, year = 114, region= "NorthEast", population = 8129. 
+Population(id,year,region,population) :- id = 2, year = 114, region= "NorthWest", population = 7314.
+Population(id,year,region,population) :- id = 3, year = 114, region= "EastMidlands", population = 4814.
+Population(id,year,region,population) :- id = 4, year = 114, region= "WestMidlands", population = 5890.
+Population(id,year,region,population) :- id = 5, year = 114, region= "East", population =  6296.
+Population(id,year,region,population) :- id = 6, year = 114, region= "London", population = 9350.
+Population(id,year,region,population) :- id = 7, year = 114, region= "SouthEast", population = 9167.
+Population(id,year,region,population) :- id = 8, year = 114, region= "SouthWest", population = 5547.
+
+ForeignBorn(id,region,x,y)  :- id=1, region = "NorthEast",   y-0.400000x=260.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=1, region = "NorthEast",   y-22.400000x=-1940.000000, x>=100, x<=105. 
+ForeignBorn(id,region,x,y)  :- id=1, region = "NorthEast",   y-27.250000x=-2449.250000, x>=105, x<=109. 
+ForeignBorn(id,region,x,y)  :- id=1, region = "NorthEast",   y-18.200000x=-1462.800000, x>=109, x<=114. 
+ForeignBorn(id,region,x,y)  :- id=2, region = "NorthWest",   y+5.400000x=817.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=2, region = "NorthWest",   y-26.777778x=-2400.777778, x>=100, x<=109. 
+ForeignBorn(id,region,x,y)  :- id=2, region = "NorthWest", y-22.800000x=-1967.200000, x>=109, x<=114. 
+ForeignBorn(id,region,x,y)  :- id=3, region = "EastMidlands",  y+1.800000x=374.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=3, region = "EastMidlands",  y-18.922222x=-1698.222222, x>=100, x<=109. 
+ForeignBorn(id,region,x,y)  :- id=3, region = "EastMidlands",  y-24.140000x=-2266.960000, x>=109, x<=114. 
+ForeignBorn(id,region,x,y)  :- id=4, region = "WestMidlands",  y-3.000000x=71.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=4, region = "WestMidlands",  y-9.800000x=-609.000000, x>=100, x<=105. 
+ForeignBorn(id,region,x,y)  :- id=4, region = "WestMidlands",  y-32.000000x=-2940.000000, x>=105, x<=109. 
+ForeignBorn(id,region,x,y)  :- id=4, region = "WestMidlands",  y-18.200000x=-1435.800000, x>=109, x<=114. 
+ForeignBorn(id,region,x,y)  :- id=5, region = "East",  y-7.400000x=-394.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=5, region = "East",  y-22.200000x=-1874.000000, x>=100, x<=105. 
+ForeignBorn(id,region,x,y)  :- id=5, region = "East",  y-28.000000x=-2483.000000, x>=105, x<=109. 
+ForeignBorn(id,region,x,y)  :- id=5, region = "East",  y-23.400000x=-1981.600000, x>=109, x<=114. 
+ForeignBorn(id,region,x,y)  :- id=6, region = "London",  y-68.400000x=-4854.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=6, region = "London",  y-72.000000x=-5214.000000, x>=100, x<=105. 
+ForeignBorn(id,region,x,y)  :- id=6, region = "London",  y-67.750000x=-4767.750000, x>=105, x<=109. 
+ForeignBorn(id,region,x,y)  :- id=6, region = "London",  y-94.600000x=-7694.400000, x>=109, x<=114. 
+ForeignBorn(id,region,x,y)  :- id=7, region = "SouthEast",  y-16.600000x=-1063.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=7, region = "SouthEast",  y-24.800000x=-1883.000000, x>=100, x<=105. 
+ForeignBorn(id,region,x,y)  :- id=7, region = "SouthEast",  y-45.500000x=-4056.500000, x>=105, x<=109. 
+ForeignBorn(id,region,x,y)  :- id=7, region = "SouthEast",  y-41.200000x=-3587.800000, x>=109, x<=114. 
+ForeignBorn(id,region,x,y)  :- id=8, region = "SouthWest",  y-0.800000x=134.000000, x>=95, x<=100. 
+ForeignBorn(id,region,x,y)  :- id=8, region = "SouthWest",  y-12.400000x=-1026.000000, x>=100, x<=105. 
+ForeignBorn(id,region,x,y)  :- id=8, region = "SouthWest",  y-17.500000x=-1561.500000, x>=105, x<=114. 
+
+Migration(Region, From, To, Foreign_Born) :- Region="NorthEast",From=1990, To = 1995, Foreign_Born = 298.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthEast",From=1995, To = 2000, Foreign_Born = 300.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthEast",From=2000, To = 2005, Foreign_Born = 412.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthEast",From=2005, To = 2009, Foreign_Born = 521.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthEast",From=2009, To = 2014, Foreign_Born = 612.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthWest",From=1990, To = 1995, Foreign_Born = 304.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthWest",From=1995, To = 2000, Foreign_Born = 277.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthWest",From=2000, To = 2005, Foreign_Born = 412.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthWest",From=2005, To = 2009, Foreign_Born = 518.
+Migration(Region, From, To, Foreign_Born) :- Region="NorthWest",From=2009, To = 2014, Foreign_Born = 632.
+Migration(Region, From, To, Foreign_Born) :- Region="EastMidland",From=1990, To = 1995, Foreign_Born = 203.
+Migration(Region, From, To, Foreign_Born) :- Region="EastMidland",From=1995, To = 2000, Foreign_Born = 194.
+Migration(Region, From, To, Foreign_Born) :- Region="EastMidland",From=2000, To = 2005, Foreign_Born = 286.
+Migration(Region, From, To, Foreign_Born) :- Region="EastMidland",From=2005, To = 2009, Foreign_Born = 365.
+Migration(Region, From, To, Foreign_Born) :- Region="EastMidland",From=2009, To = 2014, Foreign_Born = 485.
+Migration(Region, From, To, Foreign_Born) :- Region="WestMidland",From=1990, To = 1995, Foreign_Born = 356.
+Migration(Region, From, To, Foreign_Born) :- Region="WestMidland",From=1995, To = 2000, Foreign_Born = 371.
+Migration(Region, From, To, Foreign_Born) :- Region="WestMidland",From=2000, To = 2005, Foreign_Born = 420.
+Migration(Region, From, To, Foreign_Born) :- Region="WestMidland",From=2005, To = 2009, Foreign_Born = 548.
+Migration(Region, From, To, Foreign_Born) :- Region="WestMidland",From=2009, To = 2014, Foreign_Born = 639.
+Migration(Region, From, To, Foreign_Born) :- Region="East",From=1990, To = 1995, Foreign_Born = 309.
+Migration(Region, From, To, Foreign_Born) :- Region="East",From=1995, To = 2000, Foreign_Born = 346.
+Migration(Region, From, To, Foreign_Born) :- Region="East",From=2000, To = 2005, Foreign_Born = 457.
+Migration(Region, From, To, Foreign_Born) :- Region="East",From=2005, To = 2009, Foreign_Born = 569.
+Migration(Region, From, To, Foreign_Born) :- Region="East",From=2009, To = 2014, Foreign_Born = 686.
+Migration(Region, From, To, Foreign_Born) :- Region="London",From=1990, To = 1995, Foreign_Born = 1644.
+Migration(Region, From, To, Foreign_Born) :- Region="London",From=1995, To = 2000, Foreign_Born = 1986.
+Migration(Region, From, To, Foreign_Born) :- Region="London",From=2000, To = 2005, Foreign_Born = 2346.
+Migration(Region, From, To, Foreign_Born) :- Region="London",From=2005, To = 2009, Foreign_Born = 2617.
+Migration(Region, From, To, Foreign_Born) :- Region="London",From=2009, To = 2014, Foreign_Born = 3090.
+Migration(Region, From, To, Foreign_Born) :- Region="South East",From=1990, To = 1995, Foreign_Born = 514.
+Migration(Region, From, To, Foreign_Born) :- Region="South East",From=1995, To = 2000, Foreign_Born = 597.
+Migration(Region, From, To, Foreign_Born) :- Region="South East",From=2000, To = 2005, Foreign_Born = 721.
+Migration(Region, From, To, Foreign_Born) :- Region="South East",From=2005, To = 2009, Foreign_Born = 903.
+Migration(Region, From, To, Foreign_Born) :- Region="South East",From=2009, To = 2014, Foreign_Born = 1109.
+Migration(Region, From, To, Foreign_Born) :- Region="South West",From=1990, To = 1995, Foreign_Born = 210.
+Migration(Region, From, To, Foreign_Born) :- Region="South West",From=1995, To = 2000, Foreign_Born = 214.
+Migration(Region, From, To, Foreign_Born) :- Region="South West",From=2000, To = 2005, Foreign_Born = 276.
+Migration(Region, From, To, Foreign_Born) :- Region="South West",From=2005, To = 2009, Foreign_Born = 343.
+Migration(Region, From, To, Foreign_Born) :- Region="South West",From=2009, To = 2014, Foreign_Born = 434.
+
+Reasons(id,Category, Immigrants) :- id = 1, Category = "Work_Related", Immigrants = 284. 
+Reasons(id,Category, Immigrants) :- id = 2, Category = "Accompany", Immigrants = 91. 
+Reasons(id,Category, Immigrants) :- id = 3, Category = "Study", Immigrants = 193. 
+Reasons(id,Category, Immigrants) :- id = 4, Category = "Other", Immigrants = 48. 
+Reasons(id,Category, Immigrants) :- id = 5, Category = "Not_Stated", Immigrants = 26. 
+
+Origin(id, rid,Country, Region, Immigrants) :- id = 1, rid = 1, Country = "China", Region = "Asia", Immigrants = 46. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 2, rid = 2, Country = "Spain", Region = "Europe", Immigrants = 33. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 3, rid = 1, Country = "India", Region = "Asia", Immigrants = 33. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 4, rid = 3, Country = "Australia", Region = "Australia", Immigrants = 29. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 5, rid = 2, Country = "Poland" , Region = "Europe", Immigrants = 27. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 6, rid = 2, Country = "France", Region = "Europe", Immigrants = 22. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 7, rid = 4, Country = "USA", Region = "North America", Immigrants = 20. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 8, rid = 2, Country = "Italy", Region = "Europe", Immigrants = 16. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 9, rid = 2, Country = "Romania", Region = "Europe", Immigrants = 15. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 10, rid = 2, Country = "Lithuania", Region = "Europe", Immigrants = 12. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 11, rid = 2, Country = "Germany", Region = "Europe", Immigrants = 12. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 12, rid = 1, Country = "Pakistan", Region = "Asia", Immigrants = 11. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 13, rid = 1, Country = "Malaysia", Region = "Asia", Immigrants = 9. 
+Origin(id, rid,Country, Region, Immigrants) :- id = 14, rid = 2, Country = "Portugal", Region = "Europe", Immigrants = 8. 
+
+Field(id,Category, VisasIssued) :- id = 1, Category = "InfromationCommunication", VisasIssued = 23.5. 
+Field(id,Category, VisasIssued) :- id = 2, Category = "ProfessionalScientific", VisasIssued = 10.8. 
+Field(id,Category, VisasIssued) :- id = 3, Category = "Financial", VisasIssued = 6.6. 
+Field(id,Category, VisasIssued) :- id = 4, Category = "HealthSocial_Network", VisasIssued = 3.2. 
+Field(id,Category, VisasIssued) :- id = 5, Category = "Education", VisasIssued = 2.7. 
+Field(id,Category, VisasIssued) :- id = 6, Category = "Manufacturing", VisasIssued = 2.7. 
+Field(id,Category, VisasIssued) :- id = 7, Category = "Other", VisasIssued = 6. 
+
+percentage(id,x,y,percent) :-  id=1, x - y <=0, x - 0.9y >= 0, percent="100-90".
+percentage(id,x,y,percent) :-  id=2, x - 0.9y < 0, x - 0.8y >= 0, percent="90-80".
+percentage(id,x,y,percent) :-  id=3, x - 0.8y < 0, x - 0.7y >= 0, percent="80-70".
+percentage(id,x,y,percent) :-  id=4, x - 0.7y < 0, x - 0.6y >= 0, percent="70-60".
+percentage(id,x,y,percent) :-  id=5, x - 0.6y < 0, x - 0.5y >= 0, percent="60-50".
+percentage(id,x,y,percent) :-  id=6, x - 0.5y < 0, x - 0.4y >= 0, percent="50-40".
+percentage(id,x,y,percent) :-  id=7, x - 0.4y < 0, x - 0.3y >= 0, percent="40-30".
+percentage(id,x,y,percent) :-  id=8, x - 0.3y < 0, x - 0.2y >= 0, percent="30-20".
+percentage(id,x,y,percent) :-  id=9, x - 0.2y < 0, x - 0.1y >= 0, percent="20-10".
+percentage(id,x,y,percent) :-  id=10, x - 0.1y < 0, percent="10-0".
+end %MLPQ%

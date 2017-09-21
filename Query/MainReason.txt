@@ -1,0 +1,19 @@
+begin %NEST%
+
+CREATE_VIEW MainReason
+
+SELECT1 R.Category
+
+FROM1 Reasons As R
+
+WHERE1 R.Immigrants
+
+OPERATOR >= all
+
+SELECT2 R.Immigrants
+
+FROM2 Reasons As R
+
+WHERE2 
+
+end %NEST%

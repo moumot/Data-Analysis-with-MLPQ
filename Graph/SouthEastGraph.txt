@@ -1,0 +1,10 @@
+begin %MLPQ%
+SouthEast(id,x,y)  :- id=7,   y-16.600000x=-1063.000000, x>=95, x<=100. 
+SouthEast(id,x,y)  :- id=7,   y-24.800000x=-1883.000000, x>=100, x<=105. 
+SouthEast(id,x,y)  :- id=7,   y-45.500000x=-4056.500000, x>=105, x<=109. 
+SouthEast(id,x,y)  :- id=7,  y-41.200000x=-3587.800000, x>=109, x<=114. 
+
+
+
+
+end %MLPQ%

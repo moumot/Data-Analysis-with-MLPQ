@@ -1,0 +1,19 @@
+begin %NEST%
+
+CREATE_VIEW MainField
+
+SELECT1 F.Category
+
+FROM1 Field AS F
+
+WHERE1 F.VisasIssued
+
+OPERATOR >= all
+
+SELECT2 F.VisasIssued
+
+FROM2 Field AS F
+
+WHERE2 
+
+end %NEST%

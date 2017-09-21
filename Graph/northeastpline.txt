@@ -1,0 +1,10 @@
+begin %MLPQ%
+NorthEast(id,x,y)  :- id=1,    y-0.400000x=260.000000, x>=95, x<=100. 
+NorthEast(id,x,y)  :- id=1,   y-22.400000x=-1940.000000, x>=100, x<=105. 
+NorthEast(id,x,y)  :- id=1,  y-27.250000x=-2449.250000, x>=105, x<=109. 
+NorthEast(id,x,y)  :- id=1,   y-18.200000x=-1462.800000, x>=109, x<=114. 
+
+
+
+
+end %MLPQ%

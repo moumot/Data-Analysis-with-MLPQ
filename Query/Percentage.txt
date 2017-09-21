@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW Percentage
+
+SELECT P.region,PF.percent
+
+FROM ForeignBorn As F,Population As P, percentage As PF
+
+WHERE P.year=F.x,P.id=F.id,P.population=PF.y, F.y =PF.x 
+
+end %basic%

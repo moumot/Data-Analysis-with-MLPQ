@@ -1,0 +1,5 @@
+begin %MLPQ%
+EastMidlands(id,x,y)  :- id=3,   y+1.800000x=374.000000, x>=95, x<=100. 
+EastMidlands(id,x,y)  :- id=3,  y-18.922222x=-1698.222222, x>=100, x<=109. 
+EastMidlands(id,x,y)  :- id=3,  y-24.140000x=-2266.960000, x>=109, x<=114. 
+end %MLPQ%

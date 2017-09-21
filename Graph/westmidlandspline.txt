@@ -1,0 +1,6 @@
+begin %MLPQ%
+WestMidlands(id,x,y)  :- id=4,  y-3.000000x=71.000000, x>=95, x<=100. 
+WestMidlands(id,x,y)  :- id=4,  y-9.800000x=-609.000000, x>=100, x<=105. 
+WestMidlands(id,x,y)  :- id=4, y-32.000000x=-2940.000000, x>=105, x<=109. 
+WestMidlands(id,x,y)  :- id=4,   y-18.200000x=-1435.800000, x>=109, x<=114.
+end %MLPQ%

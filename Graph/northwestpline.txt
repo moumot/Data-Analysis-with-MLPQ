@@ -1,0 +1,8 @@
+begin %MLPQ%
+NorthWest(id,x,y)  :- id=2,    y+5.400000x=817.000000, x>=95, x<=100. 
+NorthWest(id,x,y)  :- id=2,   y-26.777778x=-2400.777778, x>=100, x<=109. 
+NorthWest(id,x,y)  :- id=2,  y-22.800000x=-1967.200000, x>=109, x<=114. 
+
+
+
+end %MLPQ%

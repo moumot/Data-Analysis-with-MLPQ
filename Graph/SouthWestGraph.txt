@@ -1,0 +1,12 @@
+
+
+
+begin %MLPQ%
+SouthWest(id,x,y)  :- id=8,   y-0.800000x=134.000000, x>=95, x<=100. 
+SouthWest(id,x,y)  :- id=8,   y-12.400000x=-1026.000000, x>=100, x<=105. 
+SouthWest(id,x,y)  :- id=8,   y-17.500000x=-1561.500000, x>=105, x<=114. 
+
+
+
+
+end %MLPQ%

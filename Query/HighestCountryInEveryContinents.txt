@@ -1,0 +1,15 @@
+begin %AGGREG%
+
+CREATE_VIEW HighestCountry2(rid,immigrants)
+
+SELECT O1.rid,max(O.Immigrants)
+
+FROM Origin As O, Origin As O1
+
+WHERE O.id=O1.id 
+
+GROUP O1.rid
+
+HAVING immigrants>1
+
+end %AGGREG%
