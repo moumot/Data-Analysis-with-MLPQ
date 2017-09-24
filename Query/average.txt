@@ -6,7 +6,7 @@ SELECT AVG(F.y)
 
 FROM ForeignBorn As F
 
-WHERE F.x=114 
+WHERE F.x=114  
 
 GROUP 
 

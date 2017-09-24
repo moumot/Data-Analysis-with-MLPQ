@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW LondonForeignPopulation(Region,ForeignBorn)
+
+SELECT F.region, F.y
+
+FROM ForeignBorn As F
+
+WHERE F.x = 110, F.region="London"
+
+end %basic%

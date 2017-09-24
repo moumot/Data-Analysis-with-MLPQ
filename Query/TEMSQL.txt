@@ -1,0 +1,3 @@
+begin %TEMPSQL%
+LondonForeignPopulation(Region,ForeignBorn) :- ForeignBorn(F_id,Region,F_x,ForeignBorn), F_x=110, Region="London". 
+end %TEMPSQL%
